@@ -149,18 +149,20 @@
       </div>
       <div class="row justify-content-center">
         <div class="col-md-8">
-          <form onsubmit="sendEmail(); reset(); return false;">
+          <form name="FujitimmeC-for">
             <div class="mb-3">
-              <label for="Nama" class="form-label">Nama Lengkap</label>
-              <input class="form-control" id="name" aria-describedby="name">
+              <label for="nama" class="form-label">Nama Lengkap</label>
+              <input class="form-control" id="name" aria-describedby="name"
+                     name="nama"/>
          
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label">Email </label>
-              <input type="email" class="form-control" id="Email" aria-describedby="email">
+              <input type="email" class="form-control" id="Email" aria-describedby="email"
+                     name="email"/>
               
               <div class="mb-3">
                 <label for="Pesan" class="form-label">Pesan</label>
-                <textarea class="form-control" id="Pesan" rows="3"></textarea>
+                <textarea class="form-control" id="Pesan" rows="3" name="pesan"></textarea>
               </div>
 
             <button type="submit" class="btn btn-primary">Kirim</button>
@@ -204,5 +206,19 @@
     var Email = { send: function (a) { return new Promise(function (n, e) { a.nocache = Math.floor(1e6 * Math.random() + 1), a.Action = "Send"; var t = JSON.stringify(a); Email.ajaxPost("https://smtpjs.com/v3/smtpjs.aspx?", t, function (e) { n(e) }) }) }, ajaxPost: function (e, n, t) { var a = Email.createCORSRequest("POST", e); a.setRequestHeader("Content-type", "application/x-www-form-urlencoded"), a.onload = function () { var e = a.responseText; null != t && t(e) }, a.send(n) }, ajax: function (e, n) { var t = Email.createCORSRequest("GET", e); t.onload = function () { var e = t.responseText; null != n && n(e) }, t.send() }, createCORSRequest: function (e, n) { var t = new XMLHttpRequest; return "withCredentials" in t ? t.open(e, n, !0) : "undefined" != typeof XDomainRequest ? (t = new XDomainRequest).open(e, n) : t = null, t } };
     
   </script>
+      
+      
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxm9c-0uqR24CO7uCiLjffjU32HZ3rMswLLQZNTg1A97lJVfMBHNaLPZxpbMLX_pT0KLQ/exec'
+  const form = document.forms['FujitimmeC-for']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+      
   </body>
 </html>
