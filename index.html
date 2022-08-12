@@ -185,28 +185,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 
 
- <script>
-  function sendEmail(){
-    Email.send({
-    Host : "smtp.gmail.com",
-    Username : "akutumbal1601@gmail.com",
-    Password : "wakuwakutumbal",
-    To : 'racun1601@gmail.com',
-    From : document.getElementById("email").value,
-    Subject : "New contact form enquiry",
-    Body : "Name: " + document.getElementById("name").value
-        + "<br> Email: " + document.getElementById("email").value 
-        + "<br> message: " + document.getElementById("message").value 
-}).then(
-  message => alert("berhasil dikirimkan")
-);
-  }
- </script>
-  <script src=" https://smtpjs.com/v3/smtp.js">
-    var Email = { send: function (a) { return new Promise(function (n, e) { a.nocache = Math.floor(1e6 * Math.random() + 1), a.Action = "Send"; var t = JSON.stringify(a); Email.ajaxPost("https://smtpjs.com/v3/smtpjs.aspx?", t, function (e) { n(e) }) }) }, ajaxPost: function (e, n, t) { var a = Email.createCORSRequest("POST", e); a.setRequestHeader("Content-type", "application/x-www-form-urlencoded"), a.onload = function () { var e = a.responseText; null != t && t(e) }, a.send(n) }, ajax: function (e, n) { var t = Email.createCORSRequest("GET", e); t.onload = function () { var e = t.responseText; null != n && n(e) }, t.send() }, createCORSRequest: function (e, n) { var t = new XMLHttpRequest; return "withCredentials" in t ? t.open(e, n, !0) : "undefined" != typeof XDomainRequest ? (t = new XDomainRequest).open(e, n) : t = null, t } };
-    
-  </script>
-      
       
 <script>
   const scriptURL = 'https://script.google.com/macros/s/AKfycbxm9c-0uqR24CO7uCiLjffjU32HZ3rMswLLQZNTg1A97lJVfMBHNaLPZxpbMLX_pT0KLQ/exec'
