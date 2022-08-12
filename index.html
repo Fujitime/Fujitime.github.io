@@ -149,6 +149,10 @@
       </div>
       <div class="row justify-content-center">
         <div class="col-md-8">
+          <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
+            <strong>Pesan sudah dikirim!</strong> harap jangan spam, <i>terimakasih...</i>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
           <form name="FujitimmeC-for">
             <div class="mb-3">
               <label for="nama" class="form-label">Nama Lengkap</label>
@@ -165,7 +169,12 @@
                 <textarea class="form-control" id="Pesan" rows="3" name="pesan"></textarea>
               </div>
 
-            <button type="submit" class="btn btn-primary">Kirim</button>
+            <button type="submit" class="btn btn-primary btn-kirim">Kirim</button>
+
+            <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+              <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+              Loading...
+            </button>
           </form>
         </div>
       </div>
@@ -189,11 +198,32 @@
 <script>
   const scriptURL = 'https://script.google.com/macros/s/AKfycbxm9c-0uqR24CO7uCiLjffjU32HZ3rMswLLQZNTg1A97lJVfMBHNaLPZxpbMLX_pT0KLQ/exec'
   const form = document.forms['FujitimmeC-for']
+  const btnKirim = document.querySelector('.btn-kirim');
+  const btnLoading = document.querySelector('.btn-Loading');
+  const myAlert = document.querySelector('.my-alert');
+
 
   form.addEventListener('submit', e => {
     e.preventDefault()
+
+    // passubmitdiklikcenah
+    // tampilkan tombol loadingh,hilangkeun tombol loading
+    btnLoading.classList.toggle('d-none')
+    btnKirim.classList.toggle('d-none')
+  
+
+
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => console.log('Success!', response))
+      .then(response => {
+        // tampilkan tombol kirim hilangkan tombol loading
+        btnLoading.classList.toggle('d-none')
+        btnKirim.classList.toggle('d-none')
+        // tampilkan alert
+        myAlert.classList.toggle('d-none')
+        // rest form
+        form.reset()
+        console.log('Success!', response)
+      })
       .catch(error => console.error('Error!', error.message))
   })
 </script>
