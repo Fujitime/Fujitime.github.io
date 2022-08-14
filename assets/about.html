@@ -26,9 +26,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Untitled-1.css">
 
-    <!-- Logo -->
-    
-
     <!--poppins-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -52,14 +49,7 @@
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
         <a class="navbar-item" href="#">FU<span class="span">JI</span></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
-            <li class="nav-item">
-              <a aria-current="page" href="../index.html" target="_blank">➫</a>
-            </li>
-            </ul>
+              <a aria-current="page" href="../index.html" target="_blank">➫</a>  
       </div>
     </nav>
 
@@ -69,7 +59,7 @@
       <div class="jumbotron jumbotron-fluid">
         <div class="container-fluid text">
           <h2 class="display-4"><b></b></h2>
-          <h1 class="h1"><b>Hi, I’m <span>fuji</span><span class="cursor">&nbsp;</span></b></h1>
+          <h1 class="h1"><b>Hi, I’m <span class="span Fuji typed-text"></span><span class="cursor">&nbsp;</span></h1>
           <h3 class="lead"><i> Beginner Developer</i></h3>
           <!-- Sosial Media -->
               <div class="sosial-media">
@@ -107,9 +97,9 @@
                 ‍</p> </div></p>
             </div>
           </div> 
-          <div class="col-lg-6 col-md-12 justify-content-center d-flex align-items-center">
+          <div class="col-lg-6 col-md-12 justify-content-center d-flex align-items-center" >
             <div class="about-img">
-              <img src="../img/a.png" class="img-fluid" alt="" width="540">
+              <img src="../img/a.png" class="img-fluid" alt="" width="540" >
             </div>
           </div>
         </div>
@@ -126,9 +116,9 @@
             <div class="card">
               <div class="card-body">
                 <h5 class="card-title">Anime</h5>
-                <p class="card-text">anime is one way to release boredom.
-                     What's more, anime has many genres that can adapt to the 
-                     interests of the people who watch it</p>
+                <p class="card-text">
+            Menonton anime maupun film dan series dari negara lain akan menambah wawasan Anda mengenai budaya dan ciri khas negara lain. Hal tersebut tentu akan membuka pemikiran dengan perbedaan yang ada serta dapat lebih menerimanya. Alur dan gambar yang unik dari anime membuatnya menjadi bahan inspirasi.
+                </p>
               </div>
             </div>
           </div>
@@ -136,9 +126,9 @@
             <div class="card">
               <div class="card-body">
                 <h5 class="card-title">Coding</h5>
-                <p class="card-text">Coding is a good example of out of the box thinking because we can 
-                    freely work. In addition, we will also be more accustomed to thinking structured,
-                     systematic and efficient.</p>
+                <p class="card-text">Coding merupakan salah satu jalan yang bisa dipilih untuk mengasah pola pikir dan kemampuan problem solving serta membiasakan diri menampilkan kreativitas. Menjadi seorang programmer akan membentuk pribadi yang berpikir secara terstruktur, sistematis dan efisien.
+                  
+                </p>
               </div>
             </div>
           </div>
@@ -146,8 +136,12 @@
             <div class="card">
               <div class="card-body">
                 <h5 class="card-title">Learn Life</h5>
-                <p class="card-text">Learning is important in our lives because life itself is a process. 
-                    This process is what makes us different from others. 
+                <p class="card-text">Menurutmu Kenapa kita harus belajar sepanjang hayat?
+                  Melalui proses Pendidikan Sepanjang Hayat ini, 
+                  manusia mampu meningkatkan kualitas kehidupannya secara berkesinambungan,
+                   mampu mengikuti perkembangan ilmu dan teknologi, 
+                   serta mampu mengikuti perkembangan masyarakat dan budaya untuk menghadapi tantangan masa depan dan mengubahnya menjadi peluang.
+                  
                 </p>
               </div>
             </div>
@@ -156,13 +150,12 @@
             <div class="card">
               <div class="card-body">
                 <h5 class="card-title">Listening a Music</h5>
-                <p class="card-text">By listening to music, the brain will process the sound it receives 
-                    more than focusing on feeling tired.
-                
+                <p class="card-text">Musik dapat memengaruhi suasana hati atau mood saya, 
+                  sehingga kerap digunakan sebagai salah satu terapi relaksasi. Karena menurut saya
+                  Fungsi utama musik dalam kehidupan masyarakat adalah untuk menghibur manusia
                     <a href="https://www.youtube.com/playlist?list=PLhJVwkdrIAUyfrhNEIUHdUqIP4XchBs6V" target="_blank" >
-                        My Music Playlist
-                    </a>
-                
+                        Playlist musik saya
+                    </a>         
                 </p>
               </div>
             </div>
@@ -200,86 +193,14 @@
     </footer>
     <!-- A Footer -->
 
-
-    <script>
-
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbyryaU-KiFb08lpVh-oX93cfQUVIY0eqyBaOvOTH4bNhMmSThbh1AUxTV34DVG1GoQMNQ/exec'
-        const form = document.forms['contact-my-website']
-        const btnKirim = document.querySelector('.btn-kirim');
-        const btnLoading = document.querySelector('.btn-loading');
-        const btnDAlert = document.querySelector('.my-alert');
-
-        form.addEventListener('submit', e => {
-        e.preventDefault()
-        // ketika tombol submit di klik 
-        // tampilkan tombol loading , hilangkan tombol kirim
-        btnLoading.classList.toggle("d-none");
-        btnKirim.classList.toggle("d-none");
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => {
-                // tampilkan tombol kirim , hilangkan tombol loading
-                btnLoading.classList.toggle("d-none");
-                btnKirim.classList.toggle("d-none");
-                // tampilkan alert
-                btnDAlert.classList.toggle('d-none');
-                // reset tulisan input form nya
-                form.reset()
-                console.log('Success!', response)})
-            .catch(error => console.error('Error!', error.message))
-        })
-    </script>
-    <script src="racun1601@gmail.com"></script>
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $('ul li a').click(function(){
-                $('li a').removeClass("active");
-                $(this).addClass("active");
-            });
-        });
-    </script>
-
-    <!-- Script untuk menghilangkan navigasi collapse jika dikilk akan hilang cenahh -->
-
-    <script type="text/javascript">    
-        $('.js-scroll-trigger').click(function() {
-            $('.navbar-collapse').collapse('hide');
-        });
-    </script>
-
-    <!-- Akhir -->
-    
-
-    <!-- fungsi script adalah membuat hover card ke atas -->
-    <script>
-        $(document).ready(function(){
-
-            $('.col-md-4').hover(
-                //trigger ketika mouse di sentuh
-                function(){
-                    $(this).animate({
-                        marginTop: "-=1%",
-                    },200);
-                },
-
-                //trigger  when mouse out
-                function(){
-                    $(this).animate({
-                        marginTop: "0%"
-                    },200);
-                }
-            );
-        });
-    </script>
-
-
     <script>
       const typedTextSpan = document.querySelector(".typed-text");
       const cursorSpan = document.querySelector(".cursor");
 
-      const textArray = ["Elvina"];
+      const textArray = ["Fuji"];
       const typingDelay = 100;
       const erasingDelay = 100;
-      const newTextDelay = 2500; // Delay between current and next text
+      const newTextDelay = 2000; // Delay between current and next text
       let textArrayIndex = 0;
       let charIndex = 0;
 
