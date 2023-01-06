@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="dist/output.css" rel="stylesheet">
+    <link rel="preload" as="image" href="./dist/img/kanon.png">
+    <link rel="preload" as="image" href="./dist/img/logo.png">
+    
+    <title>Portfolio</title>
+</head>
+<body class="bg-slate-50" >
+
+    <!-- header mulai -->
+    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10 " >
+        <div class="container">
+            <div class="flex items-center justify-between relative ">
+                <div class="px-4">
+                    <a href="#home" class="font-bold text-lg text-orange block py-6 " >
+                        <img src="/dist/img/logo.svg" alt="" width="200px" height="150px" class=" flex items-center mb-4 sm:mb-0" >
+                    </a>
+                </div>
+                <div class="flex items-center px-4" >
+                    <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden ">
+                        <span class="hamburger-line transition duration-300 ease-in-out  origin-top-left "></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out "></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out  origin-bottom-left  "></span>
+                    </button>
+                    <nav id="nav-menu" class=" lg:shadow-none lg:rounded-none hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full " >
+                        <ul class="block lg:flex ">
+                            <li class="group " >
+                                <a href="#home" class="text-base text-dark py-2 mx-8  flex hover:text-orange" >Beranda</a>
+                            </li>
+                            <li class="group " >
+                                <a href="#about" class="text-base text-dark py-2 mx-8 flex hover:text-orange" >Tentang Saya</a>
+                            </li>
+                            <li class="group " >
+                                <a href="#portfolio" class="text-base text-dark py-2 mx-8 flex hover:text-orange" >Portfolio</a>
+                            </li>
+                            <li class="group " >
+                                <a href="#blog" class="text-base text-dark py-2 mx-8 flex hover:text-orange" >Blog</a>
+                            </li>
+                            <li class="group " >
+                                <a href="#contact" class="text-base text-dark py-2 mx-8 flex hover:text-orange" >Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header ending -->
+
+    <!-- hero section mulai -->
+    <section id="home" class="pt-36 ">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="w-full self-center px-4 lg:w-1/2 ">
+                    <h1 class="text-xl font-semibold text-orange md:text-xl " >Hallo Minna 👋, 
+                        <span class="block font-bold text-dark text-4xl mt-1 lg:text-5xl pb-1" >Fuji Halim Rabbani</span></h1>
+                        <h2 class="font-medium text-secondary text-lg mb-5 lg:text-2xl " >Weeb <span class="font-bold text-dark">&</span> Keyboard Warrior</h2>
+                        <p class="font-medium text-secondary mb-10 leading-relaxed" ><span class="text-dark font-semibold" > Motto:</span>
+                        "Kalau tidak butuh dikerjakan, lebih baik tidak dikerjakan. Kalau harus dikerjakan, sebisanya saja"</p>
+                    
+                        <a href="https://discordapp.com/users/680289629571645440" target="_blank" class="text-base font-semibold text-white bg-orange py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out" >Contact me</a>
+                    
+                </div>
+                    <div class="w-full self-end px-4 lg:w-1/2">
+                        <div class="relative mt-10 lg:right-0 lg:mt-9">
+                        <img src="dist/img/kanon.png" alt="Shibuya Kanon" class="relative z-10 mx-auto max-w-full" width="500" height="500" />
+                        <span class="absolute bottom-0 left-1/2 -translate-x-1/2 md:scale-125">
+                            <svg  width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#fb923c" d="M65.3,-39.4C72.9,-24.5,59.3,0.9,44.8,20.4C30.4,39.9,15.2,53.5,-6.5,57.2C-28.1,61,-56.2,54.8,-63.7,39.4C-71.1,23.9,-57.9,-0.9,-43.8,-19.6C-29.8,-38.2,-14.9,-50.7,7,-54.7C28.8,-58.8,57.7,-54.4,65.3,-39.4Z" transform="translate(100 100)" />
+                                </svg>
+                        </span>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <!-- hero section ending -->
+
+    <!-- about sectiom mulai -->
+    <section id="about" class="pt-36 pb-32" >
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="w-full px-4 mb-10 lg:w-1/2">
+                    <h4 class="font-bold uppercase text-orange text-lg mb-3" >Tentang Saya</h4>
+                    <h2 class="font-bold text-dark text-3xl mb-5 max-w-md lg:text-4xl " >Hi, senang melihat Anda mengunjungi profil saya!</h2>
+                    <p class="font-medium text-base text-secondary max-w-xl lg:text-lg " >Perkenalkan, Saya Fuji Halim Rabbani, Atau biasa dipanggil Fuji. 
+                        Saya sering aktif di sosial media dan suka merasa senang karena bisa pamer, bisa ngebait, memperkeruh suasana, bercanda tawa dan sebagainya.
+                    </p>
+                </div>
+                <div class="w-full px-4 lg:w-1/2 ">
+                    <h3 class="font-semibold text-2xl text-dark mb-4 lg:text-3xl lg:pt-10 " >Mari berteman </h3>
+                    <p class="font-medium text-base text-secondary mb-6 lg:text-lg" >Ikuti saya di platform lainnya. Kalian bisa melihatku pansos di Facebook dan berbagai sosial media lainnya, Jika kalian ingin saya merespon dengan cepat silahkah hubungi melalui Discord, Telegram, Dan Whatsaap</p>
+                    <div class="flex items-center">
+                        <!-- discord -->
+                        <a href="https://discordapp.com/users/680289629571645440" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-slate-200 hover:bg-slate-200 hover:text-white text-slate-300" >
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="w-7 h-7" style="color: #7289da;"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path fill="currentColor" d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z"/></svg>
+                        </a>
+                        <!-- youtube -->
+                        <a href="https:youtube.com/@waltahh" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-slate-200 hover:bg-slate-200 hover:text-white text-slate-300" >
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="w-7 h-7" style="color: #ff0000;"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path fill="currentColor" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+                        </a>
+                        <!-- facebook -->
+                        <a href="https://www.facebook.com/kang.komen.798" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-slate-200 hover:bg-slate-200 hover:text-white text-slate-300" >
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="w-7 h-7" style="color: #1877f2;"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg>
+                        </a>
+                        <!-- telegram -->
+                        <a href="https://t.me/fuhara" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-slate-200 hover:bg-slate-200 hover:text-white text-slate-300" >
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="w-7 h-7" style="color: #0088cc;"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path fill="currentColor" d="M248,8C111.033,8,0,119.033,0,256S111.033,504,248,504,496,392.967,496,256,384.967,8,248,8ZM362.952,176.66c-3.732,39.215-19.881,134.378-28.1,178.3-3.476,18.584-10.322,24.816-16.948,25.425-14.4,1.326-25.338-9.517-39.287-18.661-21.827-14.308-34.158-23.215-55.346-37.177-24.485-16.135-8.612-25,5.342-39.5,3.652-3.793,67.107-61.51,68.335-66.746.153-.655.3-3.1-1.154-4.384s-3.59-.849-5.135-.5q-3.283.746-104.608,69.142-14.845,10.194-26.894,9.934c-8.855-.191-25.888-5.006-38.551-9.123-15.531-5.048-27.875-7.717-26.8-16.291q.84-6.7,18.45-13.7,108.446-47.248,144.628-62.3c68.872-28.647,83.183-33.623,92.511-33.789,2.052-.034,6.639.474,9.61,2.885a10.452,10.452,0,0,1,3.53,6.716A43.765,43.765,0,0,1,362.952,176.66Z"/></svg>
+                        </a>
+                        <!-- pinterest -->
+                        <a href="https://id.pinterest.com/Fuharaa/" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-slate-200 hover:bg-slate-200 hover:text-white text-slate-300" >
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="w-7 h-7" style="color: #e60023;"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path fill="currentColor" d="M204 6.5C101.4 6.5 0 74.9 0 185.6 0 256 39.6 296 63.6 296c9.9 0 15.6-27.6 15.6-35.4 0-9.3-23.7-29.1-23.7-67.8 0-80.4 61.2-137.4 140.4-137.4 68.1 0 118.5 38.7 118.5 109.8 0 53.1-21.3 152.7-90.3 152.7-24.9 0-46.2-18-46.2-43.8 0-37.8 26.4-74.4 26.4-113.4 0-66.2-93.9-54.2-93.9 25.8 0 16.8 2.1 35.4 9.6 50.7-13.8 59.4-42 147.9-42 209.1 0 18.9 2.7 37.5 4.5 56.4 3.4 3.8 1.7 3.4 6.9 1.5 50.4-69 48.6-82.5 71.4-172.8 12.3 23.4 44.1 36 69.3 36 106.2 0 153.9-103.5 153.9-196.8C384 71.3 298.2 6.5 204 6.5z"/></svg>
+                        </a>
+                        <!-- linkedin -->
+                        <a href="https://www.linkedin.com/in/fuji-halim-rabbani-1115b7243/" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-slate-200 hover:bg-slate-200 hover:text-white text-slate-300" >
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-7 h-7" style="color: #0077b5;"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path fill="currentColor" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg>
+                        </a>
+                        <!-- whatsaap -->
+                        <a href="https://github.com/fujitime" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-slate-200 hover:bg-slate-200 hover:text-white text-slate-300" >
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="w-7 h-7" style="color: #333;"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+                        </a>
+                        <!-- github -->
+                        <a href="https://wa.me/6287897527344" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-slate-200 hover:bg-slate-200 hover:text-white text-slate-300" >
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-7 h-7" style="color: #128c7e;"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path fill="currentColor" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+                        </a>
+                        <!-- osu -->
+                        <a  class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-slate-200 hover:bg-slate-200 hover:text-white text-slate-300" href="https://osu.ppy.sh/users/29747707?fbclid=IwAR3MzUuoAMZl8X0eL_cY7mhs7qsuS41Ey6fjbc8lIVnKF1SKMFKAduERmyw" target="blank">
+                            <img src="https://img.icons8.com/color/48/000000/osu.png" alt="osu.ppy.sh/users/29747707" 
+                            /></a>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+    </section>
+    <!-- about sectiom ending -->
+
+
+    <!-- portfolio section start -->
+        <section id="portfolio" class="pt-36 pb-16 bg-slate-200 ">
+            <div class="container">
+                <div class="w-full px-4">
+                    <div class="max-w-xl mx-auto text-center mb-16">
+                        <h2 class="font-bold text-3xl mb-4 sm:text-4xl lg:text-5xl text-orange font-sans " >Portfolio</h2>
+                        <p class="font-medium text-medium text-secondary md:text-lg " >Project yang pernah saya buat                        
+                        </p>
+                    </div>
+                </div>
+
+                <div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto ">
+                    <div class="mb-12 p-4 md:w-1/2">
+                        <div class="rounded-md shadow-md overflow-hidden ">
+                            <img loading="lazy" src="/dist/img/portfolio/bookshelf.png" alt="bookshelf" width="600" height="314" >
+                        </div>
+                        <h3 class="font-semibold text-xl text-dark mt-5 mb-3 ">Bookshelf App</h3>
+                        <p class="font-medium text-base text-secondary" > Mengkelola buku yang telah dibaca dengan menyimpan data pada local storage, Membuat Aplikasi Back-End sederhana dengan javascript</p>
+                    </div>
+                    <div class="mb-12 p-4 md:w-1/2">
+                        <div class="rounded-md shadow-md overflow-hidden ">
+                            <img loading="lazy" src="/dist/img/portfolio/bootstrap.png" alt="bootstrap" width="600" height="314" >
+                        </div>
+                        <h3 class="font-semibold text-xl text-dark mt-5 mb-3 ">Another Portfolio</h3>
+                        <p class="font-medium text-base text-secondary" >Membuat portfolio dengan menggunakan Bootstrap 5</p>
+                    </div>
+                    <div class="mb-12 p-4 md:w-1/2">
+                        <div class="rounded-md shadow-md overflow-hidden ">
+                            <img loading="lazy" src="/dist/img/portfolio/fork.png" alt="fork" width="600" height="314" >
+                        </div>
+                        <h3 class="font-semibold text-xl text-dark mt-5 mb-3 ">Try Fork Portfolio</h3>
+                        <p class="font-medium text-base text-secondary" >Mencoba fitur fork github, Dan mengubahnya menjadi milik saya sendiri</p>
+                    </div>
+                    <div class="mb-12 p-4 md:w-1/2">
+                        <div class="rounded-md shadow-md overflow-hidden ">
+                            <img loading="lazy" src="/dist/img/portfolio/weebsblogger.png" alt="blog" width="600" height="314" >
+                        </div>
+                        <h3 class="font-semibold text-xl text-dark mt-5 mb-3 ">WeebsBlogger</h3>
+                        <p class="font-medium text-base text-secondary" >Membuat blog sederhana menggunakan Laravel dengan menerapkan fitur login dan menerapkan CRUD pada Dashboard dengan Authorization</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- portfolio section end -->
+
+    
+    <!-- blog section start -->
+    <section id="blog" class="pt-36 pb-32 bg-slate-300 ">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="max-w-xl mx-auto text-center mb-16">
+                    <h2 class="font-bold text-3xl mb-4 sm:text-4xl lg:text-5xl text-orange font-sans " >My blog</h2>
+                    <p class="font-medium text-medium text-secondary md:text-lg " >
+                        Untuk mengisi waktu luang. Saya iseng membagikan sedikit ilmu yang saya dapat dari internet dengan menulis web log.
+                    </p>
+                </div>
+            </div>
+            <div class="flex flex-wrap">
+                <div class="w-full px-4 lg:w-1/2 xl:w-1/3  ">
+                    <div class="bg-white rounded-xl overflow-hidden shadow-lg mb-10">
+                        <img loading="lazy" src="/dist/img/blog/reading-book.png" alt="book" class="w-full" width="360px" height="200px">
+                        <div class="py-8 px-6">
+                            <h3>
+                            <a href="#blog" class="block mb-3 font-semibold text-xl text-dark hover:text-orange truncate" >Membaca buku itu penting</a> 
+                            </h3>                        
+                                <p class="font-medium text-base text-secondary mb-6 truncate" >Banyak orang tidak mengetahui bahwa membaca buku itu sangat penting, Hanya dengan membaca novel saja itu bisa meningkatkan kualitas pemikiran kita dan juga...</p>
+                                <a  class="font-medium text-sm border-2 border-red-600 text-red-600  leading-tight uppercase rounded-full hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out py-2 px-4 hover:opacity-80" href="#blog">Coming Soon</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full px-4 lg:w-1/2 xl:w-1/3  ">
+                    <div class="bg-white rounded-xl overflow-hidden shadow-lg mb-10">
+                        <img loading="lazy" src="/dist/img/blog/watchc-nime.png" alt="anime" class="w-full" width="360px" height="200px">
+                        <div class="py-8 px-6">
+                            <h3>
+                            <a href="#blog" class="block mb-3 font-semibold text-xl text-dark hover:text-orange truncate" >Kenapa orang menononton anime?</a> 
+                            </h3>                        
+                                <p class="font-medium text-base text-secondary mb-6 truncate " >Banyak cerita-cerita di anime yang memiliki alur dan tema yang benar-benar bisa menghibur dan membuat kita antusias mengikuti jalan ceritanya. Selain itu...</p>
+                                <a  class="font-medium text-sm border-2 border-red-600 text-red-600  leading-tight uppercase rounded-full hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out py-2 px-4 hover:opacity-80" href="#blog">Coming Soon</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full px-4 lg:w-1/2 xl:w-1/3  ">
+                    <div class="bg-white rounded-xl overflow-hidden shadow-lg mb-10">
+                        <img loading="lazy" src="/dist/img/blog/rubik.jpg" alt="rubik" class="w-full" width="360px" height="200px">
+                        <div class="py-8 px-6">
+                            <h3>
+                            <a href="#blog" class="block mb-3 font-semibold text-xl text-dark hover:text-orange truncate" >Bagaimana cara bermain rubik?</a> 
+                            </h3>                        
+                                <p class="font-medium text-base text-secondary mb-6 truncate" >Pernah terpikir bagaimana cara bermain rubik? kenapa orang bisa bermain rubik dengan cepat, tentu bermain rubik juga ada rumusnya...</p>
+                                <a  class="font-medium text-sm border-2 border-red-600 text-red-600  leading-tight uppercase rounded-full hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out py-2 px-4 hover:opacity-80" href="#blog">Coming Soon</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- blog section ending -->
+
+    <!-- contact senction start -->
+<section id="contact" class="pt-36 pb-36 pesani">
+<div class="w-full px-4">
+    <div class="max-w-xl mx-auto text-center mb-16">
+        <h2 class="font-bold text-3xl mb-4 sm:text-4xl lg:text-5xl text-orange font-sans" >Kirim Pesan</h2>
+        <p class="font-medium text-medium text-secondary md:text-lg my-alert hidden" >
+            <div class="flex justify-center">
+                <div role="status">
+                    <svg aria-hidden="true" class=" hidden btn-loading w-8 h-8 mr-2 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z" fill="currentColor"/>
+                        <path d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z" fill="currentFill"/>
+                    </svg>
+                    <span class="sr-only">Loading...</span>
+                </div>
+            </div>
+        </p>
+    </div>
+    <form action="" name="FujitimmeC-for">
+        <div class="w-full lg:w-2/3 lg:mx-auto " >
+    <div class="w-full px-4 mb-8">
+        <label for="name" class="text-base text-orange font-bold " >Nama</label>
+        <input id="name" aria-describedby="name"
+        name="nama" type="text" id="name" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-orange focus:ring-1 focus:border-orange" >
+    </div>
+    <div class="w-full px-4 mb-8">
+        <label for="email" class="text-base text-orange font-bold " >Email</label>
+        <input type="email" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-orange focus:ring-1 focus:border-orange" id="Email" aria-describedby="email"
+        name="email">
+    </div>
+    <div class="w-full px-4 mb-8">
+        <label for="pesan" class="text-base text-orange font-bold " >Pesan</label>
+        <textarea type="text"  id="pesan" name="pesan" class="h-32 w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-orange focus:ring-1 focus:border-orange" ></textarea>
+    </div>
+    <div class="w-full px-4">
+        <button class="btn-kirim text-base font-semibold text-white bg-orange py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500  " >
+            Kirim
+        </button>
+
+    </div>
+</div>
+</form>
+</div>
+</section>    
+<!-- contact senction ending -->
+
+
+<!-- footer mulai -->
+
+<footer class="p-4 shadow md:px-6 md:py-8 bg-slate-700">
+    <div class="sm:flex sm:items-center sm:justify-between">
+        <a href="https://flowbite.com/" class="flex items-center mb-4 sm:mb-0">
+            <img src="/dist/img/logo.png" class="h-8 mr-3" alt="Fuhara Logo" width="100px" height="100px" />
+            <span class="self-center text-lg xl:text-2xl text-slate-100 font-semibold whitespace-nowrap font-sans ">Fuji Halim Rabbani</span>
+        </a>
+        <ul class="flex flex-wrap items-center mb-6 text-sm text-gray-500 sm:mb-0 dark:text-gray-400">
+            <li>
+                    <!-- discord -->
+                    <a href="https://discordapp.com/users/680289629571645440" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-slate-700 hover:bg-slate-700 hover:text-white text-slate-300" >
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="w-5 h-5"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path fill="currentColor" d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z"/></svg>
+                    </a>
+            </li>
+            <li>
+                <!-- whatsaap -->
+                <a href="https://github.com/fujitime" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-slate-700 hover:bg-slate-700 hover:text-white text-slate-300" >
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-5 h-5"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path fill="currentColor" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+                </a>                         
+            </li>
+            <li>
+                <!-- telegram -->
+                        <a href="https://t.me/fuhara" target="_blank"  class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-slate-700 hover:bg-slate-700 hover:text-white text-slate-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="w-5 h-5"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path fill="currentColor" d="M248,8C111.033,8,0,119.033,0,256S111.033,504,248,504,496,392.967,496,256,384.967,8,248,8ZM362.952,176.66c-3.732,39.215-19.881,134.378-28.1,178.3-3.476,18.584-10.322,24.816-16.948,25.425-14.4,1.326-25.338-9.517-39.287-18.661-21.827-14.308-34.158-23.215-55.346-37.177-24.485-16.135-8.612-25,5.342-39.5,3.652-3.793,67.107-61.51,68.335-66.746.153-.655.3-3.1-1.154-4.384s-3.59-.849-5.135-.5q-3.283.746-104.608,69.142-14.845,10.194-26.894,9.934c-8.855-.191-25.888-5.006-38.551-9.123-15.531-5.048-27.875-7.717-26.8-16.291q.84-6.7,18.45-13.7,108.446-47.248,144.628-62.3c68.872-28.647,83.183-33.623,92.511-33.789,2.052-.034,6.639.474,9.61,2.885a10.452,10.452,0,0,1,3.53,6.716A43.765,43.765,0,0,1,362.952,176.66Z"/></svg>
+                        </a>
+            </li>
+
+        </ul>
+    </div>
+    <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+    <span class="block text-sm text-gray-200 sm:text-center">Dibuat oleh <a href="https:github.com/Fujitime" class="hover:underline hover:text-sky-500" target="_blank" >Fuji Halim Rabbani</a>. 
+    </span>
+</footer>
+
+<!-- footer ending -->
+
+
+        <script src="dist/js/script.js" ></script>
+        <script src="dist/js/pesan.js" ></script>
+</body>
+</html>
